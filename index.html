@@ -1,0 +1,474 @@
+<meta charset="utf-8">
+<style>
+	body {
+		margin:0;
+	}
+
+	li {
+		color:#666;
+		font-size: 12px;
+		cursor: pointer;
+		list-style-image: url('images/dian.jpg');
+
+	}
+	li:hover {
+		color: #ccc;
+
+	}
+	#out {
+		width: 1007px;
+		border: #000 solid 1px;
+		height: 1290px;
+		margin:auto;
+		overflow: hidden; /*控制超出容器的内容为隐藏*/
+		background-color: #f8f2da;
+	}
+	.d1{
+	}
+	.d2{
+		height: 37px;
+		background-image: url('images/menu.jpg');
+	}
+	.d2 ul li {
+		float: left;
+		list-style-type: none;
+		color: #888;
+		width: 100px;
+		text-align: center;
+		line-height: 15px;
+	}
+	.d2_left {
+		float: left;
+		height: 100%;
+		width: 65%;
+	}
+	.d2_right{
+		float: left;
+		height: 100%;
+		width: 35%;
+	}
+	.d3{
+
+	}
+	.d4{
+		width: 870px;
+		height: 470px;
+		margin: auto;
+	}
+	.d4_left {
+		float: left;
+		height: 100%;
+		width: 321px;
+		margin-right:11px;
+		background-color: white;
+		border: #8ab42e solid 1px;
+
+	}
+	.d4_left_1 {
+		height: 24px;
+		background-image: url('images/title.jpg');
+		color: #fff;
+		font-weight: bold;
+		text-indent: 15px;
+		font-size: 15px;
+	}
+	.d4_left_2 {
+		height: 27px;
+		background-image: url('images/title2.jpg');
+		font-size: 13px;
+		color: #8ab42e;
+		font-weight: bold;
+		text-indent: 15px;
+		line-height: 27px;
+	}
+	.d4_left_3 {
+		height: 125px;
+	}
+	.d4_left_3_left {
+		float: left;
+		height: 100%;
+		width: 50%;
+	}
+	.d4_left_3_right {
+		float: left;
+		height: 100%;
+		width: 50%;
+	}
+	.d4_left_4 {
+		height: 27px;
+		background-image: url('images/title2.jpg');
+		font-size: 13px;
+		color: #8ab42e;
+		font-weight: bold;
+		text-indent: 15px;
+		line-height: 27px;
+		margin-top: 10px;
+	}
+	.d4_left_5{
+		height: 260px;
+	}
+	.d4_left_5_left {
+		float: left;
+		height: 100%;
+		width: 190px;
+	}
+	.d4_left_5_right {
+		float: left;
+		height: 100%;
+		width: 131px;
+		font-size: 12px;
+		color: #8ab42e;
+	}
+
+	.d4_right {
+		float: left;
+		height: 100%;
+		width: 534px;
+		
+	}
+	.d4_right_top {
+		height: 260px;
+		border: #8ab42e solid 1px;
+		background-color: white;
+	}
+	.d4_right_bottom{
+		height: 200px;
+		border: #8ab42e solid 1px;
+		margin-top: 8px;
+		background-color: white;
+	}
+	.d4_right_top_1 {
+		height: 24px;
+		background-image: url('images/title.jpg');
+		color: #fff;
+		font-weight: bold;
+		text-indent: 15px;
+		font-size: 15px;
+	}
+	.d4_right_top_2 ul li {
+		border-bottom:#CCC dashed 1px;
+		list-style-position: inside;
+		margin-left: -30px;
+		line-height: 18.5px;
+
+	}
+	.d4_right_bottom_1 {
+		height: 24px;
+		background-image: url('images/title.jpg');
+		color: #fff;
+		font-size: 15px;
+		font-weight: bold;
+		text-indent: 15px;
+	}
+
+	.d4_right_bottom_2 ul li{
+		border-bottom:#CCC dashed 1px;
+		list-style-position: inside;
+		margin-left: -30px;
+		line-height: 18.5px;
+	}
+
+	.d5{
+		height: 260px;
+		width: 870px;
+		margin:auto;
+		margin-top: 10px;
+	}
+	.d5_left {
+		float: left;
+		height: 100%;
+		width: 321px;
+		border:#bab42e  solid 1px;
+		background-color: #fff;
+
+	}
+	.d5_right {
+		float: left;
+		height: 100%;
+		width: 534px;
+		border:#bab42e  solid 1px;
+		margin-left: 11px;
+		background-color: #fff;
+		
+	}
+	.d5_left_1 {
+		height: 24px;
+		background-image: url('images/title.jpg');
+		color: #fff;
+		font-weight: bold;
+		text-indent: 15px;
+		font-size: 15px;
+	}
+	.d5_left_2 {
+
+	}
+	.d5_left_3 {
+
+	}
+
+	.d5_right_1 {
+		height: 24px;
+		background-image: url('images/title3.jpg');
+		color: #fff;
+		font-size: 15px;
+		font-weight: bold;
+		text-indent: 15px;
+	}
+	.d5_right_2 {
+		height: 236px;
+	}
+	.d5_right_2_1 {
+		float: left;
+		height: 100%;
+		width: 281px;
+		border-right: #999 dashed 1px;
+	}
+	.d5_right_2_2 {
+		float: left;
+		height: 100%;
+		width: 252px;
+	}
+	.d6 {
+		height: 26px;
+		background-image: url('images/buttomtop.jpg');
+		margin-top: 10px;
+	}
+	.d7 {
+		height: 179px;
+		background-image: url('images/buttom.jpg');
+		overflow: hidden;
+	}
+	.d7 img {
+		border: #fff solid 3px;
+	}
+
+</style>
+<div id="out">
+	<div class="d1">
+		<img src="images/head.jpg">
+	</div>
+
+	<div class="d2">
+		<div class="d2_left">
+			<ul>  
+				<li style="list-style-image: none;" >首页</li>
+				<li style="list-style-image: none;">体育休闲</li>
+				<li style="list-style-image: none;">教育文化</li>
+				<li style="list-style-image: none;">行业企业</li>
+				<li style="list-style-image: none;">生活服务</li>
+				<li style="list-style-image: none;">网络科技</li>
+			</ul>
+		</div>
+		<div class="d2_right">
+			<img src="images/menuright.jpg" style="position: relative; left: 68px;" >
+		</div>
+	</div>
+
+	<div class="d3">
+		<img src="images/pic.jpg" >
+	</div>
+
+
+	<div class="d4">
+		<div class="d4_left">
+			<div class="d4_left_1">
+				体育休闲
+			</div>
+			<div class="d4_left_2">
+				时事热点
+			</div>
+			<div class="d4_left_3">
+				<div class="d4_left_3_left">
+					<ul style="margin-left: -20px; margin-top: 0px; line-height: 20px;">
+						<li>意甲赞助商本想撤资 但见C罗来要签新约!太恐怖了</li>
+						<li>谁不曾失败?卡西发自己失误集锦支持卡里乌斯</li>
+						<li>曝曼联6500万镑初步报价马奎尔</li>
+					</ul>			
+
+
+				</div>
+				<div class="d4_left_3_right">
+					<ul style="margin-left: -20px; margin-top: 0px; line-height: 20px;">
+						<li>2018足球先生候选:C罗梅西魔笛领衔 内马尔无缘</li>
+						<li>梅西C罗后,西班牙税务局盯上J罗 或罚款1650万欧</li>
+						<li>大傻:劳尔是皇马队史最佳 金球3候选魔笛C罗梅西</li>
+					</ul>		
+				</div>
+
+			</div>
+			<div class="d4_left_4">
+				推荐网站
+			</div>
+			<div class="d4_left_5">
+				<div class="d4_left_5_left">
+					<ul style="margin-left: -20px; margin-top: 0px; line-height: 20px;">
+						<a href="http://sports.sina.com.cn/index1.shtml">'新浪体育'</a><br><br>
+						<a href="http://sports.163.com/">'网易体育'</a><br><br>
+						<a href="http://www.tiyuxiu.com/?qudao=sgkz">'焦点体育'</a><br><br>
+						<a href="http://china.nba.com/">'NBA中文网'</a><br><br>
+						<a href="http://sports.sohu.com/">'搜狐体育'</a><br><br>
+						<a href="http://sports.eastday.com/theme/tuijian/?qid=sgkz">东方体育</a><br><br>
+					</ul>
+				</div>
+				<div class="d4_left_5_right">
+					<img src="images/004.jpg">
+					足球资讯
+					<img src="images/005.jpg" style="margin-top: 10px;">
+					篮球资讯
+				</div>
+			</div>
+		</div>
+
+		<div class="d4_right">
+			<div class="d4_right_top">
+				<div class="d4_right_top_1">
+					教育文化
+				</div>
+				<div class="d4_right_top_2">
+					<ul style="margin-top: 10px;">
+						<a href="http://www.xdf.cn/">'新东方网'</a><br>
+						<li>小学辅导，中学辅导，大学辅导，英语辅导，出国留学，教师查询   <span class="ss">[2020/05/23]</span></li><br>
+						<a href="http://www.tingroom.com/">'在线英语听力室'</a><br>
+						<li>听力教程，VOA慢速英语，英文歌曲，外语歌曲，英文下载，英文小说 <span class="ss">[2020/05/26]</span></li><br>
+						<a href="https://www.taisha.org/">'太傻网出国留学'</a><br>
+						<li>美国留学，澳洲留学，加拿大留学，德国留学，香港留学，英国留学    <span class="ss">[2020/05/26]</span></li><br>
+						<a href="http://www.en8848.com.cn/">'小e英语'</a><br>
+						<li>雅思，四级，六级，考研，专四，专八    <span class="ss">[2020/05/26]</span></li><br>
+						
+					</ul>
+				</div>
+			</div>
+			<div class="d4_right_bottom">
+				<div class="d4_right_bottom_1">
+					行业企业
+				</div>
+				<div class="d4_right_bottom_2">
+					<ul>
+						<a href="http://www.chinawanda.com/">'中国万达集团  -----商业百货'</a><br>
+						<a href="http://www.instrument.com.cn/">'仪器信息网-----机械工业'</a><br>
+						<a href="http://top.chinaz.com/site_www.189.cn.html">'中国电信网上营业厅-----广电通信'</a><br>
+						<a href="http://www.co188.com/">'土木工程网-----建筑材料'</a><br>
+						<a href="http://www.ea3w.com/">'万维家电网-----家电数码'</a><br>
+						<a href="http://top.chinaz.com/Html/site_xbiao.com.html">'腕表之家-----服装配饰'</a><br>
+						<a href="http://saclub.com.cn/index.jsp">'中国石化-----石化能源'</a><br>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="d5">
+		<div class="d5_left">
+			<div class="d5_left_1">
+				生活服务
+			</div>
+			<div class="d5_left_2">
+				<img src="images/006.jpg" style="margin-left: 20px; margin-top: 10px;">
+			</div>
+			<div class="d5_left_3">
+				<ul style="line-height: 20px;">
+					<li>聊天交友<a href="http://show.sogou.com/meinv/">'美女直播'</a>+<a href="http://www.baihe.com/betatest/betatest_newlandpage.html?policy=1&Channel=sgwzz-k&Code=140099-b">'百合网'</a>+<a href="http://kan.sogou.com/player/267315/">'非诚勿扰'</a></li>
+					<li>求职招聘<a href="http://ts.zhaopin.com/jump/index_new.html?utm_source=Sogou&utm_medium=cpc&utm_term=&utm_campaign=121116264&utm_provider=zp&sid=121116264&site=sougoukuzhan">'智联招聘'</a>+<a href="http://xa.58.com/job/?utm_source=market&spm=b-31580022738699-pe-f-834.123sogou_103">'58同城'</a>+<a href="https://www.lagou.com/">'拉勾网'</a></li>
+					<li>母婴网站<a href="http://baobao.sohu.com/">'搜狐母婴'</a>+<a href="http://baby.39.net/">'39健康育婴'</a>+<a href="http://www.ci123.com/">'育儿网'</a></li>
+					<li>金融财经<a href="http://www.eastmoney.com/">'东方财经'</a>+<a href="http://www.ggcj.com/2018/4/360/index.html?rrcUid=19419060001">'呱呱财经'</a>+<a href="http://business.sohu.com/">'搜狐财经'</a></li>
+					<li>汽车服务<a href="http://auto.sohu.com/?pvid=a1725a5ae0221f99">'搜狐汽车'</a>+<a href="https://www.autohome.com.cn/beijing/?pvareaid=100531">'汽车之家'</a>+<a href="http://www.xcar.com.cn/#zoneclick=102798">'爱卡汽车'</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="d5_right">
+			<div class="d5_right_1">
+				网络科技
+				<span style="color:#acd64f; margin-left: 235px; font-size: 14px; font-weight: bold; position: relative; top: 3px; ">
+					<a class="kk">海外科技</a> | <a class="kk">国内科技</a> | <a class="kk">最新科技</a>
+				</span>
+			</div>
+			<div class="d5_right_2">
+				<div class="d5_right_2_1">
+					<div style="height: 27px; background-image: url('images/title2.jpg'); color: #8ab42e; font-size: 12px;font-weight: bold; line-height: 27px; text-indent: 15px;">
+						手机数码
+					</div>
+					<div>
+						<ul style="line-height: 20px; margin-left: -10px;">
+							<li>苹果官方网站----<a href="https://www.apple.com/cn/">点击进入</a></li>
+							<li>华为官方商城----<a href="https://www.vmall.com/">点击进入</a></li>
+							<li>MIUI官方网站----<a href="http://www.miui.com/">点击进入</a></li>
+							<li>魅族官方网站----<a href="https://www.meizu.com/">点击进入</a></li>
+							<li>vivo官方网站----<a href="https://www.vivo.com.cn/">点击进入</a></li>
+							<li>OPPO官方网站----<a href="http://www.oppo.com/cn/">点击进入</a></li>
+							<li>HTC官方网站----<a href="https://www.htc.com/cn/">点击进入</a></li>
+							<li>LG官方网站----<a href="https://www.lg.com/cn">点击进入</a></li>
+							<li>锤子官方网站----<a href="https://www.smartisan.com/">点击进入</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="d5_right_2_2">
+					<div style="height: 27px; background-image: url('images/title2.jpg'); color: #8ab42e; font-size: 12px;font-weight: bold; line-height: 27px; text-indent: 15px;">
+						网络安全
+					</div>
+					<div>
+						<ul style="line-height: 20px; margin-left: -10px;">
+							<li>360安全中心----<a href="https://www.360.cn/">点击进入</a></li>
+							<li>金山网络----<a href="https://www.duba.com/">点击进入</a></li>
+							<li>VMware----<a href="https://www.vmware.com/cn.html">点击进入</a></li>
+							<li>QQ安全中心----<a href="https://aq.qq.com/cn2/index">点击进入</a></li>
+							<li>鲁大师----<a href="http://ludashi.com/">点击进入</a></li>
+							<li>红黑联盟----<a href="https://www.2cto.com/">点击进入</a></li>
+							<li>腾讯电脑管家----<a href="https://guanjia.qq.com/">点击进入</a></li>
+							<li>WiFi共享精灵----<a href="http://www.wifigx.com/">点击进入</a></li>
+							<li>小红伞查毒软件----<a href="https://www.avira.com/zh-cn/buy-antivirus">点击进入</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="d6">
+	</div>
+
+	<div class="d7">
+
+		<table style="margin-top: 15px;" width="850"  align="center">
+			<tr align="center">
+				<td><img src="images/007.jpg"></td>
+				<td><img src="images/008.jpg"></td>
+				<td><img src="images/009.jpg"></td>
+				<td><img src="images/010.jpg"></td>
+				<td><img src="images/011.jpg"></td>
+				<td><img src="images/012.jpg"></td>
+				<td><img src="images/013.jpg"></td>
+			</tr>
+			<tr align="center" style="color: #666; font-size: 12px;">
+				<td>QQ音乐</td>
+				<td>一听音乐</td>
+				<td>九天音乐</td>
+				<td>虾米音乐</td>
+				<td>酷狗音乐</td>
+				<td>网易云音乐</td>
+				<td>酷我音乐</td>
+				
+			</tr>
+		</table>
+
+
+		<div style="background: -moz-linear-gradient(black, #999); height: 12px; width: 868px; margin:auto;">
+		</div>
+
+
+	</div>
+
+	
+
+</div>
+
+<style>
+	.ss {
+		float: right;
+		margin-right: 30px;
+	}
+	.kk:hover {
+		color: #f0c;
+		cursor: pointer;
+	}
+</style>
